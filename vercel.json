@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "vasundharaNGO/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/static/(.*)",
+        "dest": "static/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "vasundharaNGO/wsgi.py"
+      }
+    ],
+    "env": {
+      "DJANGO_SECRET_KEY": "django-insecure-c)@mk!qy9p)&ln1wo#jvg(5!r+h4bqr*njz2fpg2ejdb-xj6mq",
+      "DJANGO_SETTINGS_MODULE": "vasundharaNGO.settings",
+      "VERCEL": "1"
+    }
+  }

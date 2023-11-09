@@ -1,8 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from .forms import ReviewForm
-from .models import Review
 from django.shortcuts import redirect
-
 
 
 # Create your views here.
@@ -25,16 +22,14 @@ def contact(request):
 
 def reviews(request):
     if request.method == 'POST':
-        form = ReviewForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('reviews')  # Redirect to the same URL after successful submission
+        name = request.POST.get('user-name')
+        email = request.POST.get('user-email')
+        stars = request.POST.get('user-stars')
+        description = request.POST.get('user-description')
+        print(name, email, stars, description)
+        return render(request, 'reviews.html')
     else:
-        form = ReviewForm()
-    
-    reviews = Review.objects.all()
-
-    return render(request, 'reviews.html', {'form': form, 'reviews': reviews})
+        return render(request, 'reviews.html')
 
 
 def donate(request):

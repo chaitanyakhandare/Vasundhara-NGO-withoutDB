@@ -72,28 +72,67 @@
             <div class="write-right">
                 <form action="/reviews" method="post">
                     {% csrf_token %}
-                    {{ form.name }}
-                    {{ form.email }}
-                    {{ form.stars }}
-                    {{ form.text }}
+                    <input type="text" name="user-name" placeholder="Enter full name" required>
+                    <input type="email" name="user-email" placeholder="Enter email address" required>
+                    <input type="number" name="user-stars" placeholder="No of stars (1 to 5)" min="1" max="5" required>
+                    <input type="text" name="user-description" placeholder="Describe your review" required>
                     <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
-        
+
         <div class="bold-review">
 
             <h2>All Reviews</h2>
         </div>
 
         <div class="all-reviews">
-            {% for review in reviews %}
             <div class="review">
-                <h3>{{ review.name }}</h3>
-                <p id="output-stars">{{ review.stars }} stars</p>
-                <p id="output-text">{{ review.text }}</p>
+                <h3>Ravi Kumar</h3>
+                <p id="output-stars">4 stars</p>
+                <p id="output-text">Great experience! The team at Vasundhara NGO is doing fantastic work in the
+                    community. I'm happy to support their cause.</p>
             </div>
-            {% endfor %}
+            <div class="review">
+                <h3>Ankit Patel</h3>
+                <p id="output-stars">3 stars</p>
+                <p id="output-text">Good work, but there is room for improvement. Keep it up!</p>
+            </div>
+            <div class="review">
+                <h3>Neha Singh</h3>
+                <p id="output-stars">5 stars</p>
+                <p id="output-text">Vasundhara NGO is doing incredible work for the community. Their efforts are truly commendable.</p>
+            </div>
+            <div class="review">
+                <h3>Rajesh Verma</h3>
+                <p id="output-stars">4 stars</p>
+                <p id="output-text">I've had a positive experience with Vasundhara NGO. Their team is passionate about making a difference.</p>
+            </div>
+            <div class="review">
+                <h3>Deepika Gupta</h3>
+                <p id="output-stars">4 stars</p>
+                <p id="output-text">I'm inspired by the work of Vasundhara NGO. They are bringing about real change in the lives of those they serve.</p>
+            </div>
+            <div class="review">
+                <h3>Rajendra Singh</h3>
+                <p id="output-stars">3 stars</p>
+                <p id="output-text">I appreciate the efforts of Vasundhara NGO. They are making a positive impact on the community.</p>
+            </div>
+            <div class="review">
+                <h3>Manoj Tiwari</h3>
+                <p id="output-stars">4 stars</p>
+                <p id="output-text">Vasundhara NGO is doing incredible work. Their commitment to the cause is truly commendable.</p>
+            </div>
+            <div class="review">
+                <h3>Anand Sharma</h3>
+                <p id="output-stars">4 stars</p>
+                <p id="output-text">Keep up the good work! The impact you're making is felt in the community.</p>
+            </div>
+            <div class="review">
+                <h3>Sanjay Kumar</h3>
+                <p id="output-stars">3 stars</p>
+                <p id="output-text">I'm grateful for the work Vasundhara NGO does. They are an inspiration.</p>
+            </div>
         </div>
     </div>
 

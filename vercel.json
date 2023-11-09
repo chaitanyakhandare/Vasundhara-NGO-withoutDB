@@ -1,24 +1,30 @@
 {
-    "version": 2,
     "builds": [
-      {
-        "src": "vasundharaNGO/wsgi.py",
-        "use": "@vercel/python"
-      }
+        {
+            "src": "vasundharaNGO/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.9"
+            }
+        },
+        {
+          "src": "static/**",
+          "use": "@vercel/static"
+        }
     ],
     "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "static/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "vasundharaNGO/wsgi.py"
-      }
-    ],
-    "env": {
-      "DJANGO_SECRET_KEY": "django-insecure-c)@mk!qy9p)&ln1wo#jvg(5!r+h4bqr*njz2fpg2ejdb-xj6mq",
-      "DJANGO_SETTINGS_MODULE": "vasundharaNGO.settings",
-      "VERCEL": "1"
-    }
-  }
+        {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+        },
+        {
+            "src": "{% static '(.*)' %}",
+            "dest": "/static/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "vasundharaNGO/wsgi.py"
+        }
+    ]
+}

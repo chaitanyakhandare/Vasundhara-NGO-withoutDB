@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Josefin Sans', 'Montserrat', sans-serif; */
+
+:root {
+    --lightGreen: #45EBA5;
+    --darkGreen: #21ABA5;
+    --darkBlue: #192655;
+    --lightBlue: #1D566E;
+    --bgColor: #EBFFFA;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', 'Montserrat', sans-serif;
+    background-color: var(--bgColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.reviews-page {
+    min-height: 130vh;
+    width: 100%;
+    padding-top: 16vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.write-reviews {
+    padding: 2vw 7vw;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left bottom, var(--lightGreen), #ace022);
+}
+
+.write-reviews hr {
+    border-left: 5px solid var(--darkBlue);
+    border-radius: 30px;
+    border-right: none;
+}
+
+.write-left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.write-left img {
+    width: 40%;
+}
+
+.write-left h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
+    margin-bottom: 1.2vw;
+}
+
+
+.write-right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.write-right form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 50%;
+    height: 2vw;
+    padding: 1.2vw 1vw 1.2vw 1vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    border: 2px solid var(--darkBlue);
+    border-radius: 10px;
+}
+
+.write-right button {
+    color: var(--darkBlue);
+    width: 40%;
+    height: 3vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    border: 2px solid var(--darkBlue);
+    border-radius: 10px;
+    background-color: var(--lightGreen);
+    transition: all 0.4s ease;
+}
+
+.write-right button:hover {
+    color: white;
+    background-color: var(--darkBlue);
+}
+
+
+.all-reviews {
+    margin: 2vw 0;
+    min-height: 60vh;
+    width: 100%;
+    padding: 1vw 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.reviews-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold-review > h2{
+    width: 100%;
+    display: block;
+    margin: 2vw 0;
+    font-size: 4vw;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    position: relative;
+    color: var(--darkBlue);
+    transition: all 0.5s ease;
+    z-index: 9;
+}
+.bold-review > h2::before {
+    content: "All Reviews";
+    font-family: 'Montserrat';
+    position: absolute;
+    color: var(--lightGreen);
+    top: -2px;
+    left: -2px;
+    -webkit-text-stroke: 2px var(--darkBlue);
+    z-index: -1;
+}
+.bold-review > h2:hover {
+    color: var(--lightGreen);
+}
+
+
+.review {
+    width: 20vw;
+    min-height: 20vh;
+    background: linear-gradient(to left bottom, var(--lightGreen), #ace022);
+    padding: 1.5vw 1.5vw;
+    border: 3px solid var(--darkBlue);
+    border-radius: 12px;
+    color: var(--darkBlue);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.4);
+}
+
+.review h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    margin-bottom: 0.5vw;
+}
+
+
+#output-stars {
+    font-size: 1vw;
+    font-weight: 300;
+    margin-bottom: 2vw;
+}
+
+#output-text {
+    font-family: 'Montserrat', sans-serif;
+    word-wrap: normal;
+    font-size: 0.9vw;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{% static 'logoMain.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,600,1,200" />
+
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'services.css' %}">
+    
+    <title>Services</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="nav-logo">
+            <img src="{% static 'logoMain.png' %}" alt="">
+            <h4>Vasundhara</h4>
+        </div>
+
+        <div class="nav-middle">
+            <a href="/">
+                <h4>Home</h4>
+            </a>
+
+            <a href="about">
+                <h4>About Us</h4>
+            </a>
+
+            <a href="services">
+                <h4>Services</h4>
+            </a>
+
+            <a href="contact">
+                <h4>Contact Us</h4>
+            </a>
+
+            <a href="reviews">
+                <h4>Reviews</h4>
+            </a>
+        </div>
+
+        <div class="nav-end">
+            <a href="donate">
+                <h4>Donate Now</h4>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <div class="services-page">
+
+        <div class="services-text">
+            <h1>Our Services</h1>
+        </div>
+
+
+        <div class="our-services">
+            <div class="card" id="card1">
+                <div class="overlay">
+                    <h3>Afforestation</h3>
+                    <p>Vasundhara actively promotes environmental conservation and restoration, focusing on afforestation, biodiversity preservation, and sustainable land management. </p>
+                    <p>Through community engagement, the NGO works to restore natural ecosystems, ensuring a sustainable environment for future generations.</p>
+                </div>
+                <h1>Afforestation</h1>
+            </div>
+            
+            <div class="card" id="card2">
+                <div class="overlay">
+                    <h3>Jal Sangrahan</h3>
+                    <p>Vasundhara prioritizes sustainable water management through community-based initiatives, focusing on rainwater harvesting and watershed management to enhance water quality and availability. </p>
+                    <p>The NGO's efforts mitigate water scarcity and promote environmental resilience.</p>
+                </div>
+                <h1>Jal Sangrahan</h1>
+            </div>
+            
+            <div class="card" id="card3">
+                <div class="overlay">
+                    <h3>Tikakaran</h3>
+                    <p>Vasundhara arranges vaccination camps in rural areas, providing essential immunizations, especially for newborns, protecting against diseases like polio.</p>
+                    <p>Focusing on accessible healthcare, the NGO safeguards the well-being of remote communities, particularly vulnerable populations.</p>
+                </div>
+                <h1>Tikakaran</h1>
+            </div>
+
+            <div class="card" id="card4">
+                <div class="overlay">
+                    <h3>Medical Camps</h3>
+                    <p>Vasundhara organizes regular medical camps in rural areas, offering general check-ups and treatments while emphasizing health awareness and hygiene education. </p>
+                    <p>The NGO empowers communities with essential knowledge to prevent diseases and enhance overall well-being.</p>
+                </div>
+                <h1>Medical Camps</h1>
+            </div>
+
+            <div class="card" id="card5">
+                <div class="overlay">
+                    <h3>Workshop & Trainings</h3>
+                    <p>Vasundhara conducts STEM workshops and trains tutors to integrate new technologies and innovative teaching methods, empowering educators to prepare students for opportunities in STEM fields.</p>
+                </div>
+                <h1 id="workshop-text">Workshop & Trainings</h1>
+            </div>
+
+            <div class="card" id="card6">
+                <div class="overlay">
+                    <h3>Diverse abilities assistance</h3>
+                    <p>Vasundhara provides specialized care and education for children with diverse needs and disabilities, fostering an inclusive and supportive environment that promotes their well-being and overall development.</p>
+                </div>
+                <h1>Diverse abilities & assistance</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-top">
+            <div class="content-logo">
+                <img src="{% static 'logoMain.png' %}" alt="">
+                <h4>Vasundhara</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com">
+                        <img id="social-logo" src="{% static 'facebook.svg' %}" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com">
+                        <img id="social-logo" src="{% static 'instagram.svg' %}" alt="">
+                    </a>
+
+                    <a href="https://www.twitter.com">
+                        <img id="social-logo" src="{% static 'twitter.svg' %}" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="content-links">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <h4>Home</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about">
+                            <h4>About Us</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services">
+                            <h4>Services</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact">
+                            <h4>Contact Us</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reviews">
+                            <h4>Reviews</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-signup">
+                <p>Newsletter Sign up</p>
+                <input type="email" name="useremail" id="input-email" placeholder="Email address">
+                <button>Sign Up</button>
+            </div>
+
+            <div class="content-contact" id="content-change">
+                <p>456 Green Circle,</p>
+                <p>Pune, Maharashtra</p>
+                <p>India</p>
+                <p>411001</p>
+                <a href="mailto:contact@vasundhara-ngo.org">
+                    <p>contact@vasundhara-ngo.org</p>
+                </a>
+                <p>Tel: +91 20 1234 5678</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023 Adventure Leisure Ltd. All rights reserved.</p>
+            <span>|</span>
+            <p>Privacy Policy</p>
+            <span>|</span>
+            <p>Terms and Conditions</p>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>

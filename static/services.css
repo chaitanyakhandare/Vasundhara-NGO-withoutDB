@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Josefin Sans', 'Montserrat', sans-serif; */ 
+
+:root {
+    --lightGreen: #45EBA5;
+    --darkGreen: #21ABA5;
+    --darkBlue: #192655;
+    --lightBlue: #1D566E;
+    --bgColor: #EBFFFA;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', 'Montserrat', sans-serif; 
+    background-color: var(--bgColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.services-page {
+    width: 100%;
+    min-height: 180vh;
+    padding-top: 16vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.our-services {
+    height: 70%;
+    width: 100%;
+    padding: 3vw 6vw 0 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.services-text h1 {
+    font-size: 4vw;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    position: relative;
+    color: var(--darkBlue);
+    transition: all 0.5s ease;
+    z-index: 9;
+}
+.services-text h1::before {
+    content: "Our Services";
+    position: absolute;
+    color: var(--lightGreen);
+    top: -2px;
+    left: -2px;
+    -webkit-text-stroke: 2px var(--darkBlue);
+    z-index: -1;
+}
+.services-text h1:hover {
+    color: var(--lightGreen);
+}
+
+
+.card {
+    height: 40%;
+    width: 30%;
+    margin-top: 2vw;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.3; 
+}
+
+.card:hover::before {
+    opacity: 0; 
+}
+
+.card h1 {
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 1.5vw;
+    bottom: 15px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    opacity: 1;
+    margin: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover h1 {
+    opacity: 0;
+}
+
+#card1 {
+    background-image: url("./affores-services.jpeg");
+}
+#card2 {
+    background-image: url("./water-services.jpeg");
+}
+#card3 {
+    background-image: url("./tika-services.jpeg");
+}
+#card4 {
+    background-image: url("./camp-services.jpeg");
+}
+#card5 {
+    background-image: url("./workshop-services.jpeg");
+}
+#card6 {
+    background-image: url("./diverse-services.jpeg");
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: var(--lightGreen);
+    padding: 8vw 2.5vw 1vw 2.5vw;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.overlay h3{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 800;
+    color: rgb(28, 28, 28);
+    margin: 20px 0;
+}
+
+.overlay p{
+    color: rgb(28, 28, 28);
+    line-height: 25px;
+    font-size: 1.3vw;
+    font-weight: 300;
+    margin: 16px 0;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+.card:hover {
+    transform: rotate3d(1,1,0, 15deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content-change p{
+    margin-top: 1.1vw;
+}

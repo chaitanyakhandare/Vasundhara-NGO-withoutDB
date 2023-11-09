@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Josefin Sans', 'Montserrat', sans-serif; */ 
+
+:root {
+    --lightGreen: #45EBA5;
+    --darkGreen: #21ABA5;
+    --darkBlue: #192655;
+    --lightBlue: #1D566E;
+    --bgColor: #EBFFFA;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', 'Montserrat', sans-serif; 
+    background-color: var(--bgColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.contact-page {
+    padding: 2vw 10vw;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+.contact-left {
+    padding: 2vw 4vw 0vw 0vw;
+    height: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1vw;
+}
+.contact-left p{
+    font-size: 1.2vw;
+    margin-top: 0.3vw;
+    color: rgb(59, 59, 59);
+    line-height: 2vw
+}
+.contact-left h3{
+    font-size: 1.3vw;
+    margin-top: 1.4vw;
+}
+
+
+.contact-right {
+    height: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 1vw;
+    padding-top: 2.5vw;
+    margin-right: 2vw;
+}
+
+#make-bold {
+    font-weight: 600;
+}
+
+.contact-right input, textarea {
+    border: 2px solid var(--darkBlue);
+    background-color: var(--bgColor);
+    border-radius: 8px;
+    padding: 1vw 1vw;
+    font-size: 1.2vw;
+    font-family: 'Josefin Sans', 'Montserrat', sans-serif;
+    width: 60%;
+}
+
+.contact-right h4 {
+    width: 60%;
+    font-weight: 300;
+    font-size: 1.4vw;
+}
+.contact-right input {
+    height: 7%;
+}
+.contact-right textarea {
+    line-height: 2vw;
+    height: 30%;
+}
+.contact-right button{
+    width: 60%;
+    cursor: pointer;
+    padding: 0.8vw 2vw;
+    color: white;
+    border: 2px solid var(--darkBlue);
+    font-size: 0.9vw;
+    font-weight: 800;
+    border-radius: 20px;
+    background-color: var(--lightGreen);
+    color: var(--darkBlue);
+    transition: all 0.5s ease;
+}
+
+.contact-right button:hover{
+    background-color: var(--darkBlue);
+    border: 2px solid var(--lightGreen);
+    color: white;
+}
+
+
+
+
+#content-change p{
+    margin-top: 1vw;
+}
+
+
+
+
+
+
+
+
+
+

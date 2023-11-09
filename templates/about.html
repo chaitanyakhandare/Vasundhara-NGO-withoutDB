@@ -1,0 +1,262 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{% static 'logoMain.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,600,1,200" />
+
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+    <title>About Us</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="nav-logo">
+            <img src="{% static 'logoMain.png' %}" alt="">
+            <a href='/'>
+                <h4>Vasundhara</h4>
+            </a>
+        </div>
+
+        <div class="nav-middle">
+            <a href="/">
+                <h4>Home</h4>
+            </a>
+
+            <a href="about">
+                <h4>About Us</h4>
+            </a>
+
+            <a href="services">
+                <h4>Services</h4>
+            </a>
+
+            <a href="contact">
+                <h4>Contact Us</h4>
+            </a>
+
+            <a href="reviews">
+                <h4>Reviews</h4>
+            </a>
+        </div>
+
+        <div class="nav-end">
+            <a href="donate">
+                <h4>Donate Now</h4>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <div class="about-page">
+        <div class="mission-about">
+            <h1>&#8220; Mission Statement &#8221;</h1>
+            <p>At Vasundhara, our mission is to empower communities by fostering sustainable development initiatives in
+                the fields of environment, healthcare, and education. Through collaborative partnerships, innovative
+                programs, and advocacy efforts, we aim to enhance the well-being of individuals, promote inclusive
+                growth, and build a resilient and equitable society for present and future generations.</p>
+        </div>
+
+        <hr id="line-between">
+
+        <div class="volunteer-about">
+            <div class="volunteer-left">
+                <h1>Calling all passionate individuals!</h1>
+                <p>
+                    Cultivate change through action! Join our team of dedicated volunteers and become a catalyst for
+                    positive impact. Your time and efforts can make a significant difference in building a better future
+                    for those in need. Embrace the power of volunteering and be the change you wish to see in the world.
+                </p>
+
+            </div>
+
+            <div class="volunteer-right">
+                <h4 id="make-bold">Enroll here!</h4>
+                <input type="text" name="username" id="con-name" placeholder="Enter full name">
+                <input type="email" name="useremail" id="con-email" placeholder="Enter email address">
+                <input type="text" name="number" id="con-number" class="input-name-css" pattern="[1-9]{1}[0-9]{9}"
+                maxlength="10" placeholder="Enter phone number" required>
+                <textarea name="con-msg" id="con-msg" cols="30" rows="10" placeholder="Why you want to work with us?"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+
+
+
+        <div class="history-about">
+            <div class="history-text">
+                <h2>History</h2>
+                <p>Vasundhara" was founded in 2005 by Mr. Chaitanya, a passionate environmentalist and visionary leader with a strong commitment to social change. After witnessing the detrimental effects of environmental degradation and the lack of access to essential healthcare and education in underserved communities, Mr. Chaitanya was compelled to create an organization that could address these interconnected challenges. With the support of like-minded individuals and early adopters, he laid the groundwork for "Vasundhara," starting with small-scale community projects and awareness campaigns to promote sustainable practices and community well-being. </p>
+            </div>
+            <div id="RIGHT-HISTORY" class="history-graph">
+                <img src="{% static 'about-history.png' %}" alt="">
+            </div>
+        </div>
+
+        <hr id="line-between">
+
+        <div class="CHALLENGES-FACED history-about">
+            <div class="history-text">
+                <h2>Challenges Faced</h2>
+                <p>In its initial years, "Vasundhara" encountered a series of obstacles that tested its resilience and determination. Securing adequate funding for its ambitious projects was a constant struggle, requiring Mr. Chaitanya and his team to diversify their fundraising efforts, seek grants from various foundations, and engage in extensive community outreach to demonstrate the tangible benefits of their initiatives. Overcoming bureaucratic red tape and garnering support from skeptical local authorities demanded persistent advocacy and networking, emphasizing the organization's commitment to transparency, accountability, and community participation. </p>
+            </div>
+            <div id="RIGHT-CURRENT" class="history-graph">
+                <img src="{% static 'challenges-right.png' %}" alt="">
+            </div>
+        </div>
+
+
+        <hr id="line-between">
+        
+        
+        <div id="CURRENT-STATUS" class="history-about">
+            <div class="history-text">
+                <h2>Current Status</h2>
+                <p>As of 2023, "Vasundhara" has grown into a recognized and respected NGO, making a meaningful impact on the communities it serves. Through its relentless efforts, the organization has successfully implemented several large-scale projects, including the establishment of sustainable environmental practices, the creation of mobile healthcare units to reach remote areas, and the development of educational programs focused on empowering women and children. With an expanded team of dedicated staff and volunteers, "Vasundhara" has strengthened its partnerships with governmental agencies, international organizations, and local communities, further amplifying its reach and influence. The organization's commitment to innovation, sustainability, and community participation has positioned it as a leading advocate for holistic and equitable development, inspiring hope and positive change for the future. For the most accurate and up-to-date information, please refer to the NGO's official website and recent reports. </p>
+            </div>
+            <div id="RIGHT-CHALLENGES" class=" history-graph">
+                <img src="{% static 'current-right.jpeg' %}" alt="">
+            </div>
+        </div>
+
+        <div class="ourteam">
+            <h1>&#8220; Our Team &#8221;</h1>
+        </div>
+
+        <div class="team-about" id="OUR-TEAM">
+            <img src="{% static 'dots-side.svg' %}" alt="">
+
+            <div class="team-text" id="donate-text">
+                <div class="member-1">
+                    <img src="{% static 'chaitanya.JPG' %}" alt="" id="chaitanya-img"> 
+                    <div class="member-text">
+                        <h3>Chaitanya Khandare</h3>
+                        <h5 style="font-weight: 400; margin-top: 0.4vw;">Founder</h5>
+                        <p>Mr. Chaitanya, an environmentalist and social entrepreneur, founded 'Vasundhara' to address environmental degradation, healthcare disparities, and educational inequalities. His visionary leadership and commitment to sustainable development have shaped the organization's impactful initiatives.</p>
+                    </div>
+                </div>
+
+                <div class="member-1">
+                    <img src="{% static 'sumedh.jpeg' %}" alt="" id="sumedh-img">
+                    <div class="member-text">
+                        <h3>Sumedh Kulkarni</h3>
+                        <h5 style="font-weight: 400; margin-top: 0.4vw;">Co-Founder</h5>
+                        <p>Mr. Sumedh, a seasoned community organizer and development strategist, co-founded 'Vasundhara' to foster community-driven solutions and inclusive development. His collaborative approach and strategic insights have been instrumental in expanding the NGO's network and enhancing its impact within the community.</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="{% static 'dots-side.svg' %}" alt="">
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-top">
+            <div class="content-logo">
+                <img src="{% static 'logoMain.png' %}" alt="">
+                <h4>Vasundhara</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com">
+                        <img id="social-logo" src="{% static 'facebook.svg' %}" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com">
+                        <img id="social-logo" src="{% static 'instagram.svg' %}" alt="">
+                    </a>
+
+                    <a href="https://www.twitter.com">
+                        <img id="social-logo" src="{% static 'twitter.svg' %}" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="content-links">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <h4>Home</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about">
+                            <h4>About Us</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services">
+                            <h4>Services</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact">
+                            <h4>Contact Us</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reviews">
+                            <h4>Reviews</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-signup">
+                <p>Newsletter Sign up</p>
+                <input type="email" name="useremail" id="input-email" placeholder="Email address">
+                <button>Sign Up</button>
+            </div>
+
+            <div class="content-contact">
+                <p>456 Green Circle,</p>
+                <p>Pune, Maharashtra</p>
+                <p>India</p>
+                <p>411001</p>
+                <a href="mailto:contact@vasundhara-ngo.org">
+                    <p>contact@vasundhara-ngo.org</p>
+                </a>
+                <p>Tel: +91 20 1234 5678</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023 Adventure Leisure Ltd. All rights reserved.</p>
+            <span>|</span>
+            <p>Privacy Policy</p>
+            <span>|</span>
+            <p>Terms and Conditions</p>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Josefin Sans', 'Montserrat', sans-serif; */ 
+
+:root {
+    --lightGreen: #45EBA5;
+    --darkGreen: #21ABA5;
+    --darkBlue: #192655;
+    --lightBlue: #1D566E;
+    --bgColor: #EBFFFA;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', 'Montserrat', sans-serif; 
+    background-color: var(--bgColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.about-page { 
+    min-height: 350vh;
+    width: 100%;
+    padding-top: 16vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.mission-about {
+    width: 100%;
+    height: 50vh;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vw;
+    z-index: 10;
+}
+
+.mission-about h1 {
+    font-size: 6vw;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    position: relative;
+    color: var(--darkBlue);
+    transition: all 0.5s ease;
+}
+.mission-about h1::before {
+    content: "\201C  Mission Statement \201D";
+    position: absolute;
+    color: var(--lightGreen);
+    top: -3px;
+    left: -3px;
+    -webkit-text-stroke: 2px var(--darkBlue);
+    z-index: -1;
+}
+.mission-about h1:hover {
+    color: var(--lightGreen);
+}
+
+
+.mission-about p {
+    font-size: 1.5vw;
+    font-weight: 300;
+    line-height: 2.4vw;
+}
+
+
+
+#line-between {
+    width: 40%;
+    border-top: 4px solid var(--darkBlue);
+    text-align: center;
+    border-radius: 40px;
+    margin-bottom: 2vw;
+}
+
+
+.volunteer-about {
+    padding: 2vw 7vw;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.volunteer-left {
+    padding: 2vw 4vw 0vw 0vw;
+    height: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1vw;
+}
+.volunteer-left h1{
+    font-size: 2vw;
+    color: var(--darkBlue);
+    margin-top: 0.3vw;
+    line-height: 2vw
+}
+.volunteer-left p{
+    font-size: 1.4vw;
+    margin-top: 0.3vw;
+    font-weight: 300;
+    color: rgb(59, 59, 59);
+    line-height: 2vw
+}
+
+
+.volunteer-right {
+    height: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 1vw;
+    padding-top: 2.5vw;
+    margin-right: 2vw;
+}
+
+#make-bold {
+    font-weight: 600;
+}
+
+.volunteer-right input, textarea {
+    border: 2px solid var(--darkBlue);
+    background-color: var(--bgColor);
+    border-radius: 8px;
+    padding: 1.5vw 1vw 1.3vw 1vw;
+    font-size: 1.2vw;
+    font-family: 'Josefin Sans', 'Montserrat', sans-serif;
+    width: 60%;
+}
+
+.volunteer-right h4 {
+    width: 60%;
+    font-weight: 300;
+    font-size: 1.4vw;
+}
+.volunteer-right input {
+    height: 7%;
+}
+.volunteer-right textarea {
+    line-height: 2vw;
+    height: 30%;
+}
+.volunteer-right button{
+    width: 60%;
+    cursor: pointer;
+    padding: 0.8vw 2vw;
+    color: white;
+    border: 2px solid var(--darkBlue);
+    font-size: 0.9vw;
+    font-weight: 800;
+    border-radius: 20px;
+    background-color: var(--lightGreen);
+    color: var(--darkBlue);
+    transition: all 0.5s ease;
+}
+
+.volunteer-right button:hover{
+    background-color: var(--darkBlue);
+    border: 2px solid var(--lightGreen);
+    color: white;
+}
+
+
+
+
+
+.history-about {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 100%;
+    height: 40vh;
+    padding: 0vw 3vw 3vw 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.history-text {
+    width: 60%;
+    padding: 0 3vw 0 7vw;
+}
+.history-text h2{
+    font-size: 2.4vw; 
+    font-weight: 900;
+}
+.history-text p{
+    font-size: 1.4vw;
+    line-height: 2vw;
+    text-align: start;
+    margin-top: 2vw;
+    font-weight: 300;
+}
+
+.history-graph {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    text-align: center;
+}
+
+.graph-trees, .graph-lives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.graph-trees span , .graph-lives span {
+    font-size: 4vw;
+}
+
+#tree-impact{
+    color: green;
+}
+#life-impact{
+    color: rgb(255, 72, 39);
+}
+
+.graph-trees h3 , .graph-lives h3 {
+    font-size: 2vw;
+}
+.graph-trees h5 , .graph-lives h5 {
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+#RIGHT-HISTORY img{
+    width: 70%;
+    border-radius: 25px;
+}
+#RIGHT-CURRENT img{
+    width: 50%;
+    border-radius: 25px;
+}
+#RIGHT-CHALLENGES img{
+    width: 60%;
+    border-radius: 25px;
+}
+
+
+#CURRENT-STATUS {
+    height: 60vh;
+}
+
+.ourteam {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourteam h2{
+    font-size: 2vw;
+}
+
+.ourteam h1 {
+    font-size: 6vw;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    position: relative;
+    color: var(--darkBlue);
+    transition: all 0.5s ease;
+}
+.ourteam h1::before {
+    content: "\201C  Our Team \201D";
+    position: absolute;
+    color: var(--lightGreen);
+    top: -3px;
+    left: -3px;
+    -webkit-text-stroke: 2px var(--darkBlue);
+    z-index: -1;
+}
+.ourteam h1:hover {
+    color: var(--lightGreen);
+}
+
+
+.team-about {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left bottom, var(--lightGreen), #ace022);
+    overflow: hidden;
+}
+
+.team-about > img{
+    width: 10%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    object-position: center;
+}
+
+.team-text {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#chaitanya-img{
+    object-fit: cover;
+    object-position: center;
+    width: 33%;
+    border-radius: 15px;
+}
+#sumedh-img{
+    object-fit: cover;
+    object-position: center;
+    width: 30%;
+    border-radius: 15px;
+}
+
+.member-1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-right: 2vw;
+}
+
+.member-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.member-text h3{
+    font-size: 1.5vw;
+}
+
+
+
+.member-text p{
+    width: 90%;
+    margin-top: 1vw;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

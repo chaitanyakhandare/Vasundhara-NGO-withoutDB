@@ -1,0 +1,293 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{% static 'logoMain.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,600,1,200" />
+
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="nav-logo">
+            <img src="{% static 'logoMain.png' %}" alt="">
+            <a href='/'>
+                <h4>Vasundhara</h4>
+            </a>
+        </div>
+
+        <div class="nav-middle">
+            <a href='/'>
+                <h4>Home</h4>
+            </a>
+
+            <a href="about">
+                <h4>About Us</h4>
+            </a>
+
+            <a href="services">
+                <h4>Services</h4>
+            </a>
+
+            <a href="contact">
+                <h4>Contact Us</h4>
+            </a>
+
+            <a href="reviews">
+                <h4>Reviews</h4>
+            </a>
+        </div>
+
+        <div class="nav-end">
+            <a href="donate">
+                <h4>Donate Now</h4>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="home-page">
+        <marquee behavior="" direction="" scrollAmount="25">
+            <img src="{% static 'environment-home.webp' %}" alt="">
+            <img src="{% static 'enviro2-home.png' %}" alt="">
+            <img src="{% static 'slide3-home.png' %}" alt="">
+            <img src="{% static 'slide4-home.png' %}" alt="">
+            <img src="{% static 'slide5-home.jpeg' %}" alt="">
+            <img src="{% static 'slide6-home.png' %}" alt="">
+        </marquee>
+
+        <div class="intro-home">
+            <div class="intro-text">
+                <h2>Introduction</h2>
+                <p>"Vasundhara" is a non-governmental organization dedicated to fostering sustainable development and
+                    creating a positive impact in the realms of environment, healthcare, and education. With a strong
+                    commitment to social welfare, we strive to address pressing challenges and promote holistic
+                    well-being within communities, fostering a culture of inclusivity and empowerment. </p>
+            </div>
+
+            <div class="intro-img">
+                <img src="{% static 'intro-img.jpeg' %}" alt="">
+            </div>
+        </div>
+
+        <div class="home-mission">
+            <img src="{% static 'dots-side.svg' %}" alt="">
+
+            <div class="mission-text">
+                <h2>Our Mission & Vision</h2>
+                <p>Our mission is to promote environmental sustainability, enhance healthcare accessibility, and
+                    facilitate quality education for underprivileged communities, fostering a more equitable and
+                    prosperous society. We envision a world where every individual has the opportunity to thrive, and
+                    where the environment is protected and preserved for future generations. </p>
+            </div>
+
+            <img src="{% static 'dots-side.svg' %}" alt="">
+        </div>
+
+        <div class="environment-home intro-home">
+            <div class="intro-img" id="enviro-img">
+                <img src="{% static 'enviro-main.jpeg' %}" alt="">
+            </div>
+
+            <div class="intro-text" id="enviro-text">
+                <h2>Environment</h2>
+                <p>Through our environmental initiatives, we aim to advocate for conservation practices, promote
+                    eco-friendly solutions, and raise awareness about the importance of preserving our natural
+                    resources. By organizing community-driven campaigns, sustainable development projects, and
+                    educational programs, we work towards creating a more sustainable and resilient environment for all.
+                </p>
+            </div>
+        </div>
+
+        <div class="heathcare-home intro-home">
+            <div class="intro-text">
+                <h2>HealthCare</h2>
+                <p>In the realm of healthcare, we are dedicated to improving access to vital medical services, providing
+                    support for marginalized communities, and advocating for better health outcomes. Our initiatives
+                    include organizing health camps, facilitating medical assistance, and implementing preventive
+                    healthcare programs, ensuring that every individual has access to essential healthcare services and
+                    resources. </p>
+            </div>
+
+            <div class="intro-img">
+                <img src="{% static 'health-main.jpeg' %}" alt="">
+            </div>
+        </div>
+
+        <div class="education-home intro-home">
+            <div class="intro-img" id="enviro-img">
+                <img src="{% static 'education-main.jpeg' %}" alt="">
+            </div>
+
+            <div class="intro-text" id="enviro-text">
+                <h2>Education</h2>
+                <p>In the sphere of education, we are committed to promoting inclusive and quality learning
+                    opportunities for children and adults alike. By establishing educational programs, scholarships, and
+                    skill-building workshops, we aim to empower individuals with the knowledge and tools necessary to
+                    create a brighter future. Our efforts are focused on bridging educational disparities and fostering
+                    a culture of lifelong learning and personal growth. </p>
+            </div>
+        </div>
+
+        <div class="home-mission" id="DONATE-NOW">
+            <img src="{% static 'dots-side.svg' %}" alt="">
+
+            <div class="mission-text" id="donate-text">
+                <h2>Donate & make an impact!</h2>
+                <p>Your donation is an investment in hope, opportunity, and a better world for all</p>
+
+                <a href="donate">
+                    <button>Donate Now</button>
+                </a>
+            </div>
+
+            <img src="{% static 'dots-side.svg' %}" alt="">
+        </div>
+
+        <div class="impact-home">
+            <div class="impact-text">
+                <h2>Our impact in the community</h2>
+                <p>The impact of "Vasundhara" in the community has been profound and far-reaching. Through its concerted
+                    efforts in the areas of environment, healthcare, and education, the NGO has fostered a culture of
+                    sustainability, improved healthcare accessibility, and promoted inclusive education. By organizing
+                    awareness campaigns, providing essential resources, and implementing community-driven projects,
+                    Vasundhara has significantly enhanced the quality of life for numerous individuals and families. Its
+                    initiatives have not only contributed to a healthier and more sustainable environment but have also
+                    empowered individuals, particularly the marginalized, by providing them with the necessary tools and
+                    opportunities to lead more fulfilling and prosperous lives.</p>
+            </div>
+            <div class="impact-graph">
+                <div class="graph-trees">
+                    <span class="material-symbols-outlined" id="tree-impact">
+                        forest
+                    </span>
+                    <h3>9000 +</h3>
+                    <h5>Trees we've planted!</h5>
+                </div>
+                <div class="graph-lives">
+                    <span class="material-symbols-outlined" id="life-impact">
+                        cardiology
+                    </span>
+                    <h3>3000 +</h3>
+                    <h5>Lives we've saved!</h5>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-top">
+            <div class="content-logo">
+                <img src="{% static 'logoMain.png' %}" alt="">
+                <h4>Vasundhara</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com">
+                        <img id="social-logo" src="{% static 'facebook.svg' %}" alt="">
+                    </a>
+
+                    <a href="https://www.instagram.com">
+                        <img id="social-logo" src="{% static 'instagram.svg' %}" alt="">
+                    </a>
+
+                    <a href="https://www.twitter.com">
+                        <img id="social-logo" src="{% static 'twitter.svg' %}" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="content-links">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <h4>Home</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about">
+                            <h4>About Us</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services">
+                            <h4>Services</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact">
+                            <h4>Contact Us</h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reviews">
+                            <h4>Reviews</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-signup">
+                <p>Newsletter Sign up</p>
+                <input type="email" name="useremail" id="input-email" placeholder="Email address">
+                <button>Sign Up</button>
+            </div>
+
+            <div class="content-contact">
+                <p>456 Green Circle,</p>
+                <p>Pune, Maharashtra</p>
+                <p>India</p>
+                <p>411001</p>
+                <a href="mailto:contact@vasundhara-ngo.org">
+                    <p>contact@vasundhara-ngo.org</p>
+                </a>
+                <p>Tel: +91 20 1234 5678</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2023 Adventure Leisure Ltd. All rights reserved.</p>
+            <span>|</span>
+            <p>Privacy Policy</p>
+            <span>|</span>
+            <p>Terms and Conditions</p>
+        </div>
+
+    </div>
+
+
+
+    <!-- scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>
